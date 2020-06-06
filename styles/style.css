@@ -8,30 +8,38 @@ h1 {
   color: white;
   margin-bottom: 0;
 }
+.ball {
+  position: relative;
+  height: 90vh;  
+}
 img {
-  width: 40%;
+  width: 50%;
+  height: 90vh;
 }
 .answer {
-  position: relative;
-  bottom: 280px;
-  height: 20px;
-  font-size: 1.5em;
+  position: absolute;
+  width: 100%;
+  top: 48%;
   color: white;
+  font-size: 1.5em;
+  text-align: center;
   text-shadow: 1px 2px 5px white;
   animation: tracking-out-contract 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) 3s both;
 }
-.animation{
-  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;  
-}
 #shake-btn{
+  position: absolute;
+  width: auto;
+  height: 50px;
+  bottom: 10%;
+  right: 48%;
   color: white;
   text-shadow: 0px 0px 4px white;
   background: black;
   border-radius: 50%;
   outline: none;
-  height: 50px;
-  position: relative;
-  bottom: 40px;
+}
+.animation{
+  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;  
 }
 @keyframes tracking-in-expand-fwd {
   0% {
@@ -61,4 +69,3 @@ img {
     opacity: 0;
   }
 }
-
